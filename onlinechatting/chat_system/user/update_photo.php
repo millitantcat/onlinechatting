@@ -7,7 +7,7 @@
 		$location=$srow['photo'];
 		?>
 			<script>
-				window.alert('Загружаемое фото отсутствует!');
+				window.alert('Загруженная фотография пуста!');
 				window.history.back();
 			</script>
 		<?php
@@ -30,7 +30,7 @@
 		else{
 			?>
 				<script>
-					window.alert('Фото не щагружено. Пожалуйста, загрузить PNG/JPG файл!');
+					window.alert('Фотография не обновлена. Пожалуйста, загружайте только файлы в формате JPG или PNG!');
 					window.history.back();
 				</script>
 			<?php

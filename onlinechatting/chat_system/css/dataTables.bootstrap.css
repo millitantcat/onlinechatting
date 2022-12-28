@@ -152,7 +152,7 @@ div.dataTables_scrollHead table.table-bordered {
 .table.dataTable tbody tr.active td,
 .table.dataTable tbody tr.active th {
 	background-color: #08C;
-	color: white;
+	color: rgb(255, 255, 255);
 }
 
 .table.dataTable tbody tr.active:hover td,

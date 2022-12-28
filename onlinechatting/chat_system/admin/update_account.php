@@ -13,7 +13,7 @@
 	if ($cpassword!=$apassword){
 		?>
 		<script>
-			window.alert('Пароль для подтверждения не совпал!');
+			window.alert('Verification Password did not match!');
 			window.history.back();
 		</script>
 		<?php
@@ -22,7 +22,7 @@
 	elseif ($cpassword!=$myqrow['password']){
 		?>
 		<script>
-			window.alert('Текущий пароль не совпадает!');
+			window.alert('Current Password did not match!');
 			window.history.back();
 		</script>
 		<?php

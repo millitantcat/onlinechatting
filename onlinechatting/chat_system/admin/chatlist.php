@@ -8,10 +8,10 @@
 	<table width="100%" class="table table-striped table-bordered table-hover" id="chatRoom">
         <thead>
             <tr>
-                <th>Название комнат</th>
+                <th>Название комнаты</th>
                 <th>Пароль</th>
 				<th>Дата создания</th>
-				<th>Действие</th>
+				<th>Действия</th>
 			</tr>
 		</thead>
 		<tbody>

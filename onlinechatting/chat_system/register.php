@@ -12,7 +12,7 @@
 		$username=check_input($_POST['username']);
 		
 		if (!preg_match("/^[a-zA-Z0-9_]*$/",$username)) {
-			$_SESSION['sign_msg'] = "Недопустимое имя пользователя!"; 
+			$_SESSION['sign_msg'] = "Имя пользователя не должно содержать пробелов и специальных символов!"; 
 			header('location: signup.php');
 		}
 		else{
@@ -25,7 +25,7 @@
 		
 		mysqli_query($conn,"insert into `user` (uname, username, password, access) values ('$fname', '$fusername', '$fpassword', '2')");
 		
-		$_SESSION['msg'] = "Регистрация прошла успешно, вы можете войти уже сейчас!"; 
+		$_SESSION['msg'] = "Добро пожаловать в систему!"; 
 		header('location: index.php');
 		}
 	}

@@ -15,7 +15,7 @@
 	else{
 		?>
 		<script>
-			window.alert('Incorrect Password!');
+			window.alert('Неверный пароль!');
 			window.history.back();
 		</script>
 		<?php

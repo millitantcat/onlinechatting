@@ -13,7 +13,7 @@
 	if ($cpassword!=$apassword){
 		?>
 		<script>
-			window.alert('Verification Password did not match!');
+			window.alert('Не верный пароль!');
 			window.history.back();
 		</script>
 		<?php
@@ -22,7 +22,7 @@
 	elseif ($cpassword!=$myqrow['password']){
 		?>
 		<script>
-			window.alert('Current Password did not match!');
+			window.alert('Текущий пароль не совпал!');
 			window.history.back();
 		</script>
 		<?php
@@ -39,7 +39,7 @@
 		mysqli_query($conn,"update `user` set username='$musername', password='$newpassword', uname='$mname' where userid='".$_SESSION['id']."'");
 		?>
 		<script>
-			window.alert('Changes Saved!');
+			window.alert('Изменения сохранены!');
 			window.history.back();
 		</script>
 		<?php

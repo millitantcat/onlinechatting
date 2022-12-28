@@ -22,7 +22,7 @@
 	
 			?>
 				<script>
-					window.alert('ЗФото успешно обновлено!');
+					window.alert('Фото успешно обновлено!');
 					window.history.back();
 				</script>
 			<?php

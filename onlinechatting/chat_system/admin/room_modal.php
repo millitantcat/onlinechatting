@@ -4,17 +4,17 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Покинуть комнату..</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Покинуть комнату...</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
 					<h3><center>Are you sure?</center></h3>
-					<span style="font-size: 11px;"><center><i>Примечание: Как только вы покинете комнату и захотите вернуться, для запертой комнаты потребуется пароль.</i></center></span>
+					<span style="font-size: 11px;"><center><i>Если захотите вернутся, то понаждобится ввести пароль. Вы уверены, что хотите выйти?</i></center></span>
                 </div> 
 				</div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Отменить</button>
-                    <button type="submit" class="btn btn-warning" id="confirm_leave"><span class="glyphicon glyphicon-check"></span> Покинуть</button>
+                    <button type="submit" class="btn btn-warning" id="confirm_leave"><span class="glyphicon glyphicon-check"></span> Выйти</button>
 				
                 </div>
             </div>
@@ -30,7 +30,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Удалить комнату....</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Удалить комнату...</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -55,13 +55,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Добавить участников</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Добавить пользователя</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
 					<form method="POST" action="addnewmember.php?id=<?php echo $id; ?>">
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">Выберете участников:</span>
+						<span class="input-group-addon" style="width:150px;">Выберете пользователя:</span>
 						<select style="width:350px;" class="form-control" name="user">
 							<?php
 							include('../conn.php');
@@ -70,12 +70,12 @@
 								while($umrow=mysqli_fetch_array($um)){
 									$mem[]=$umrow['userid'];
 								}
-								$users=implode($mem, "', '");
+								$users = implode(",", $mem);
 								
 								$u=mysqli_query($conn,"select * from `user` where userid not in ('".$users."')");
 								if(mysqli_num_rows($u)<1){
 									?>
-									<option value="">Нет доступных пользователей</option>
+									<option value="">No User Available</option>
 									<?php
 								}
 								else{

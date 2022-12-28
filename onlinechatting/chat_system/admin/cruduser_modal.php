@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">AДобавить нового пользователя</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Добавить нового пользователя</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -22,7 +22,7 @@
 						<input type="text" style="width:350px;" class="form-control" id="upassword" required>
 					</div>
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">Access:</span>
+						<span class="input-group-addon" style="width:150px;">Доступ:</span>
 						<select style="width:350px;" class="form-control" id="uaccess">
 							<option value="2">Пользователь</option>
 							<option value="1">Администратор</option>
@@ -48,11 +48,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Удалить пользователя...</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel"> Удалить пользователся...</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h3><center>Вы уверены</center></h3>
+					<h3><center>Вы уверены?</center></h3>
                 </div> 
 				</div>
                 <div class="modal-footer">
@@ -72,7 +72,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Редактировать пользователя</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Редатировать пользователя</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -92,7 +92,7 @@
 				</div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Отменить</button>
-                    <button type="button" class="btn btn-success" id="confirm_update"><span class="glyphicon glyphicon-check"></span> Добавить</button>
+                    <button type="button" class="btn btn-success" id="confirm_update"><span class="glyphicon glyphicon-check"></span> Обновить</button>
 				
                 </div>
             </div>

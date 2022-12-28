@@ -8,7 +8,7 @@
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<center><strong><span style="font-size: 15px;">Пользователь: <?php echo $user; ?></span></strong></center>
+					<center><strong><span style="font-size: 15px;">Логин: <?php echo $user; ?></span></strong></center>
                 </div> 
 				</div>
                 <div class="modal-footer">
@@ -28,13 +28,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Загрузка фото...</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Загрузить фото...</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
 					<form method="POST" enctype="multipart/form-data" action="update_photo.php">
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">Фото:</span>
+						<span class="input-group-addon" style="width:150px;">фото:</span>
 						<input type="file" style="width:350px;" class="form-control" name="image">
 					</div>
                 </div> 
@@ -76,7 +76,7 @@
 						<input type="password" style="width:350px;" class="form-control" name="mpassword" value="<?php echo $srow['password']; ?>">
 					</div>
 					<hr>
-					<span>Введите пароль для сохранения:</span>
+					<span>Введите текущий пароль, чтобы сохранить изменения:</span>
 					<div style="height: 10px;"></div>
 					<div class="form-group input-group">
 						<span class="input-group-addon" style="width:150px;">Пароль:</span>
@@ -90,7 +90,7 @@
 				</div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Отменить</button>
-                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Обновить</button>
+                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Загрузить</button>
 				</form>
                 </div>
             </div>
